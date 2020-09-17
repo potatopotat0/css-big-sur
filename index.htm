@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MacOS Big Sur Desktop With CSS</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script>
+		function addDot() {
+			var oDiv = document.getElementsById('icon');
+			oDiv.style.visibility = 'visible';
+			oDiv.style.opacity = 100%;
+		}
+	</script>
+</head>
+<body>
+	<div class="menu">
+		<div tabindex="0" class="menu logo">
+			<img class="menu logo" src="https://bloghost-1254352323.cos.ap-hongkong.myqcloud.com/BlogUpload/2020/05/BlogAvatar.jpg" />
+		</div>
+		<div tabindex="0" class="menu current">
+			Potato Space
+		</div>
+		<div tabindex="0" class="menu item">
+			File
+			<div class="menu item dropdown">
+				<ul>Things #1</ul>
+			</div>
+		</div>
+	</div>
+	<div class="dock bottom">
+		<div class="dock icon">
+			<a id="icon" class="dock icon img" onclick="addDot()" href="https://intoyour.space">
+				<img style="height: 48px; width: 48px; border-radius: 12px;" src="https://bloghost-1254352323.cos.ap-hongkong.myqcloud.com/BlogUpload/2020/05/BlogAvatar.jpg" />
+			</a>
+			<div class="dock icon name">Potato Space</div>
+			<div class="dock icon vistag">.</div>
+		</div>
+		<div class="dock icon">
+			<a id="icon" class="dock icon img" href="https://google.com">
+				<img style="height: 48px; width: 48px; border-radius: 12px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1004px-Google_%22G%22_Logo.svg.png" />
+			</a>
+			<div class="dock icon name">Google</div>
+			<div class="dock icon vistag">.</div>
+		</div>
+	</div>
+</body>
+</html>
