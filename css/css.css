@@ -6,10 +6,14 @@ body {
 }
 /*Menu Bar Start*/
 .dropmenu {
-	padding: 0px;
+	padding: 9px;
 	margin: 0px;
 	padding-top: 3px;
 	padding-bottom: 3px;
+	border-radius: 4px;
+}
+.dropmenu:hover {
+	background-color: rgba(48, 157, 250, 1);
 }
 .menu {
 	width: 100%;
@@ -58,8 +62,8 @@ div.menu.logo {
 .menu.item {
 	left: 148px;
 	padding: 4px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 14px;
+	padding-right: 14px;
 	height: fit-content;
 	width: fit-content;
 	background: none;
@@ -72,15 +76,15 @@ div.menu.logo {
 	border-radius: 6px;
 }
 .menu.item.dropdown {
+	font-weight: normal;
 	visibility: hidden;
 	opacity: 0%;
 	position: absolute;
-	left: 50%;
-	transform: translate(-25%, 0px);
+	left: 0px;
 	top: 23px;
 	padding: 6px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 4px;
+	padding-right: 4px;
 	margin: 0px;
 	backdrop-filter: blur(180px);
 	background-color: rgba(155, 155, 155, .45);
@@ -94,7 +98,7 @@ div.menu.logo {
 	cursor: default;
 	background-color: rgba(222, 233, 233, .85);
 }
-.menu.item:focus .menu.item.dropdown {
+.menu.current:focus .menu.item.dropdown, .menu.logo:focus .menu.item.dropdown, .menu.item:focus .menu.item.dropdown {
 	transition: 0s ease;
 	visibility: visible;
 	opacity: 100%;
@@ -148,8 +152,8 @@ div.menu.logo {
 	padding-bottom: 3px;
 	padding-left: 15px;
 	padding-right: 15px;
-	border: solid 1px rgba(23, 23, 23, .05);
-	backdrop-filter: none;
+	border: solid 1px rgba(23, 23, 23, .15);
+	backdrop-filter: blur(18px);
 	background-color: rgba(140, 140, 140, .85);
 	border-radius: 6px;
 	font-family: "SF Pro", "PingFang SC", Helvetica, "Microsoft Yahei", sans-serif;
