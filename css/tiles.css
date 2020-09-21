@@ -1,0 +1,70 @@
+.standard {
+}
+/*Floating Animation Start*/
+.float.small:hover {
+	cursor: pointer;
+	transform: translate(3px, -3px);
+}
+.float.medium:hover {
+	cursor: pointer;
+	transform: translate(4px, -4px);
+}
+.float.large:hover {
+	cursor: pointer;
+	transform: translate(5px, -5px);
+}
+/*Floating Animation End*/
+/*Tiles Start*/
+.tile {
+	font-family: "SF Pro", "PingFang SC",  "Helvetica", "Microsoft Yahei", sans-serif;
+	margin: 6px;
+	transition: all 0.15s ease;
+	backdrop-filter: blur(8px);
+	padding: 8px;
+	border: solid 1px rgba(0, 0, 0, .25);
+	box-shadow: 6px 6px 11px 1px rgba(0, 0, 0, .45);
+	background-color: rgba(255, 255, 255, .25);
+}
+.tile.small {	
+	width: 84px;
+	height: 84px;
+	border-radius: 13px;
+}
+.tile.medium {
+	width: 109px;
+	height: 109px;
+	border-radius: 13px;
+}
+.tile.large {
+	width: 134px;
+	height: 134px;
+	border-radius: 13px;
+}
+/*Tiles End*/
+/*Cards Start*/
+.card {
+	font-family: "SF Pro", "PingFang SC",  "Helvetica", "Microsoft Yahei", sans-serif;
+	margin: 6px;
+	transition: all 0.15s ease;
+	backdrop-filter: blur(8px);
+	padding: 8px;
+	border: solid 1px rgba(0, 0, 0, .25);
+	box-shadow: 6px 6px 11px 1px rgba(0, 0, 0, .45);
+	background-color: rgba(255, 255, 255, .25);
+}
+.card.small {
+	width: 168px;
+	height: 67px;
+	border-radius: 13px;
+}
+.card.medium {
+	width: 218px;
+	height: 87px;
+	border-radius: 13px;
+}
+.card.large {
+	width: 268px;
+	height: 107px;
+	border-radius: 13px;
+}
+/*Cards End*/

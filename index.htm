@@ -3,21 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>MacOS Big Sur Desktop With CSS</title>
-	<link rel="stylesheet" type="text/css" href="css/css.css">
-	<script language="javascript">
-		function addDot(ID) {
-			var oDiv = document.getElementById(ID);
-			oDiv.style.visibility = 'visible';
-			oDiv.style.opacity = '100%';
-		};
-	</script>
+	<link rel="stylesheet" type="text/css" href="css/desktop.css">
+	<link rel="stylesheet" type="text/css" href="css/tiles.css">
+	<link rel="stylesheet" type="text/javascript" href="js/function.js">
+	<script type="text/javascript" src="js/function.js"></script>
 </head>
 <body>
 	<div class="menu">
 		<div tabindex="0" class="menu logo">
 			<img class="menu logo" src="https://bloghost-1254352323.cos.ap-hongkong.myqcloud.com/BlogUpload/2020/05/BlogAvatar.jpg" />
 			<div class="menu item dropdown">
-				<ul class="dropmenu">About This Site</ul>
+				<ul class="dropmenu" onclick="alert('Please star and that I can make this full');">About This Site</ul>
 				<ul class="dropmenu" onclick="location='about:blank'">Shutdown</ul>
 			</div>
 		</div>
@@ -37,6 +33,13 @@
 				<ul class="dropmenu">Cut</ul>
 			</div>
 		</div>
+		<div tabindex="0" id="currentTime" class="menu time"></div>
+	</div>
+	<div tabindex="0" class="showwidget"></div> 
+	<div class="sidewidget">
+		<div class="card large">This is a card.</div>
+		<div class="tile large">And this is a tile.</div>
+		<div class="tile large">There's a second tile.</div>
 	</div>
 	<div class="dock bottom">
 		<div class="dock icon">

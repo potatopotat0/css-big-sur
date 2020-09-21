@@ -5,6 +5,35 @@ body {
 	background-size: cover;
 }
 /*Menu Bar Start*/
+.sidewidget {
+	/*debug*/
+	/*border: solid 1px black;*/
+	/*debug*/
+	float: left;
+	position: absolute;
+	width: 230px;
+	height: 60%;
+	left: 100%;
+	transition: .5s ease;
+	transform: translate(0, 30px);
+}
+.showwidget {
+	/*border: solid 1px black;*/
+	top: 0px;
+	width: 82px;
+	height: 20px;
+	float: left;
+	position: absolute;
+	left: 100%;
+	transform: translate(-100%, 0);
+}
+.showwidget:focus {
+	outline: none;
+}
+.showwidget:focus + .sidewidget {
+	transform: translate(-300px, 30px);
+	transition: .5s ease;
+}
 .dropmenu {
 	padding: 9px;
 	margin: 0px;
@@ -59,6 +88,23 @@ div.menu.logo {
 	display: inline-block;
 	border-radius: 6px;
 }
+.menu.time {
+	left: 100%;
+	transform: translate(-100%, 0);
+	padding: 4px;
+	padding-left: 14px;
+	padding-right: 14px;
+	height: fit-content;
+	width: fit-content;
+	background: none;
+	font-family: "SF Pro", "PingFang SC",  "Helvetica", "Microsoft Yahei", sans-serif;
+	font-size: 12px;
+	margin-right: 23px;
+	backdrop-filter: none;
+	position: absolute;
+	display: inline-block;
+	border-radius: 6px;
+}
 .menu.item {
 	left: 148px;
 	padding: 4px;
@@ -97,6 +143,10 @@ div.menu.logo {
 	outline: none;
 	cursor: default;
 	background-color: rgba(222, 233, 233, .85);
+}
+.menu.time:focus {
+	outline: none;
+	cursor: default;
 }
 .menu.current:focus .menu.item.dropdown, .menu.logo:focus .menu.item.dropdown, .menu.item:focus .menu.item.dropdown {
 	transition: 0s ease;
