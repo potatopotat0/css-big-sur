@@ -52,6 +52,7 @@ body {
 	left: 0px;
 	background-color: rgba(215, 240, 240, .75);
 	backdrop-filter: blur(50px);
+	-webkit-backdrop-filter: blur(50px);
 }
 img.menu.logo {
 	width: 16px;
@@ -84,6 +85,7 @@ div.menu.logo {
 	font-size: 12px;
 	margin-right: 23px;
 	backdrop-filter: none;
+	-webkit-backdrop-filter: none;
 	position: absolute;
 	display: inline-block;
 	border-radius: 6px;
@@ -101,6 +103,7 @@ div.menu.logo {
 	font-size: 12px;
 	margin-right: 23px;
 	backdrop-filter: none;
+	-webkit-backdrop-filter: none;
 	position: absolute;
 	display: inline-block;
 	border-radius: 6px;
@@ -117,6 +120,7 @@ div.menu.logo {
 	font-size: 12px;
 	margin-right: 23px;
 	backdrop-filter: none;
+	-webkit-backdrop-filter: none;
 	position: absolute;
 	display: inline-block;
 	border-radius: 6px;
@@ -133,6 +137,7 @@ div.menu.logo {
 	padding-right: 4px;
 	margin: 0px;
 	backdrop-filter: blur(180px);
+	-webkit-backdrop-filter: blur(180px);
 	background-color: rgba(155, 155, 155, .45);
 	font-family: "SF Pro", "PingFang SC",  "Helvetica", "Microsoft Yahei", sans-serif;
 	font-size: 12px;
@@ -158,6 +163,7 @@ div.menu.logo {
 .dock {
 	padding: 9px;
 	backdrop-filter: blur(18px);
+	-webkit-backdrop-filter: blur(18px);
 	background-color: rgba(255, 255, 255, .25);
 	border-radius: 20px;
 	border: solid 1px rgba(23, 23, 23, .15);
@@ -204,6 +210,7 @@ div.menu.logo {
 	padding-right: 15px;
 	border: solid 1px rgba(23, 23, 23, .15);
 	backdrop-filter: blur(18px);
+	-webkit-backdrop-filter: blur(18px);
 	background-color: rgba(140, 140, 140, .85);
 	border-radius: 6px;
 	font-family: "SF Pro", "PingFang SC", Helvetica, "Microsoft Yahei", sans-serif;
@@ -244,6 +251,7 @@ div.menu.logo {
 	background: none;
 	border: none;
 	backdrop-filter: none;
+	-webkit-backdrop-filter: none;
 }
 .dock.icon:hover {
 	cursor: pointer;
